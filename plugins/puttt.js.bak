@@ -1,0 +1,46 @@
+//scby put
+
+let fetch = require('node-fetch')
+let { MessageType } = require('@adiwajshing/baileys')
+let handler = async(m, { conn }) => {
+    let Putbotz = `𝕴𝖓𝖋𝖔𝖗𝖒𝖆𝖙𝖎𝖔𝖓 𝖀𝖕𝖉𝖆𝖙𝖊 𝕺𝖓 15 𝕱𝖊𝖇𝖗𝖚𝖆𝖗𝖞
+
+❗𝕹𝖊𝖜 𝕱𝖊𝖆𝖙𝖚𝖗𝖊
+› 𐐪-Sticker Telegram-𐑂
+› 𐐪-taxy-𐑂
+› 𐐪-ojek-𐑂
+› 𐐪-ngewe-𐑂
+› 𐐪-add auto sticker like-𐑂
+ › 𐐪-wibu-𐑂
+ › 𐐪-bohong-𐑂
+ › 𐐪-error-𐑂
+ › 𐐪-sesat-𐑂
+❌𝕱𝖊𝖆𝖙𝖚𝖗𝖊 𝕽𝖊𝖒𝖔𝖛𝖊
+› 𐐪-tiktok-𐑂
+
+🛠️𝕱𝖊𝖆𝖙𝖚𝖗𝖊 𝕱𝖎𝖝
+› 𐐪-new ui-𐑂
+
+⚠️𝕱𝖎𝖙𝖚𝖗 𝕰𝖗𝖗𝖔𝖗
+› 𐐪-play-𐑂
+
+© 𝕻𝖚𝖙𝖇𝖔𝖙𝖟
+
+𝖑𝖆𝖘𝖙 𝖀𝖕𝖉𝖆𝖙𝖊 20 𝕱𝖊𝖇𝖗𝖚𝖆𝖗𝖞
+`.trim()
+  const button = {
+        buttonText: 'Klik Di sini',
+        description: Putbotz,
+        sections:  [{title: "Silahkan di pilih © Putbotz", rows: [
+        {title: 'Menu Utama', description: "Kembali ke Menu Utama", rowId:".?"},
+        {title: 'Nomor Owner', description: "Owner Putbotz", rowId:".owner"},
+       ] }],
+        listType: 1
+       }
+    conn.sendMessage(m.chat, button, MessageType.listMessage, { quoted: m })
+}
+
+handler.tags = ['updateee']
+handler.command = /^(updateee)$/i
+handler.help = ['info']
+module.exports = handler

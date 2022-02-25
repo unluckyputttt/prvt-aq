@@ -1,0 +1,18 @@
+let handler  = async (m, { conn, usedPrefix: _p }) => {
+let info = `
+
+`.trim()
+• Allah swt
+• My ortu
+• Nurutomo
+• Putbotz
+• Zeks
+• Penyedia Layanan API
+• Orang-orang yang Berdonasi
+conn.fakeReply(m.chat, info, '0@s.whatsapp.net', `*✧──────────···──────────✧*\n                   Putbotz Ganteng`, 'status@broadcast')
+}
+handler.customPrefix = /^(tqto|thankto|thanksto)$/i
+handler.command = new RegExp
+
+module.exports = handler
+let wm = global.botwm

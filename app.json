@@ -1,0 +1,11 @@
+{
+  "name": "Putbotz",
+  "description": "MADE BY PUTBOTZ",
+  "repository": "https://github.com/Putbotz/stikerinbot",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": [
+    "bot",
+    "whatsapp",
+    "whatsapp-bot"
+  ]
+}
